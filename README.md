@@ -18,7 +18,7 @@ Add the following inside the project manifest (android/app/src/main/AndroidManif
 import AndroidWakeScreen from 'react-native-android-wake-screen';
 
 // TODO: What to do with the module?
-inside your headless function
+//inside your headless function
 const MyHeadlessFunction = async () => {
   AndroidWakeScreen.wakeScreen();
 };
