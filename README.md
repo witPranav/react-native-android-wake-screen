@@ -9,6 +9,7 @@
 `$ react-native link react-native-android-wake-screen`
 
 ## Usage
+Add the following inside the project manifest (android/app/src/main/AndroidManifest.xml):
 ```javascript
 import AndroidWakeScreen from 'react-native-android-wake-screen';
 
