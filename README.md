@@ -10,6 +10,9 @@
 
 ## Usage
 Add the following inside the project manifest (android/app/src/main/AndroidManifest.xml):
+```xml
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
 ```javascript
 import AndroidWakeScreen from 'react-native-android-wake-screen';
 
