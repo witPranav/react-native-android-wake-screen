@@ -30,7 +30,7 @@ public class AndroidWakeScreenModule extends ReactContextBaseJavaModule {
         PowerManager powerManager = (PowerManager) getReactApplicationContext().getSystemService(getReactApplicationContext().POWER_SERVICE);
         boolean screenOn = Build.VERSION.SDK_INT >= 20 ? powerManager.isInteractive() : powerManager.isScreenOn();
         if (!screenOn) {
-            PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "myApp:notificationLock");
+            PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, "yourApp:tag");
             wakeLock.acquire();
         }
     }
