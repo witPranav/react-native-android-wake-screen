@@ -74,27 +74,6 @@ dependencies {
     implementation 'com.facebook.react:react-native:+'  // From node_modules
 }
 
-def configureReactNativePom(def pom) {
-    def packageJson = new groovy.json.JsonSlurper().parseText(file('../package.json').text)
-
-    pom.project {
-        name packageJson.title
-        artifactId packageJson.name
-        version = packageJson.version
-        group = "com.reactlibrary"
-        description packageJson.description
-        url packageJson.repository.baseUrl
-
-        licenses {
-            license {
-                name packageJson.license
-                url packageJson.repository.baseUrl + '/blob/master/' + packageJson.licenseFilename
-                distribution 'repo'
-            }
-        }
-    }
-}
-
 afterEvaluate { project ->
     // some Gradle build hooks ref:
     // https://www.oreilly.com/library/view/gradle-beyond-the/9781449373801/ch03.html
@@ -135,7 +114,6 @@ afterEvaluate { project ->
         repositories.mavenDeployer {
             // Deploy to react-native-event-bridge/maven, ready to publish to npm
             repository url: "file://${projectDir}/../android/maven"
-            configureReactNativePom pom
         }
     }
 }
