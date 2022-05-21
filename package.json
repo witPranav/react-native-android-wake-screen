@@ -1,7 +1,7 @@
 {
   "name": "react-native-android-wake-screen",
   "title": "React Native Android Wake Screen",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Turn the Screen Display On",
   "main": "index.js",
   "files": [
@@ -29,5 +29,10 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witPranav/react-native-android-wake-screen.git",
+    "baseUrl": "https://github.com/witPranav/react-native-android-wake-screen"
   }
 }
