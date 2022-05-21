@@ -1,7 +1,7 @@
 {
   "name": "react-native-android-wake-screen",
   "title": "React Native Android Wake Screen",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Turn the Screen Display On",
   "main": "index.js",
   "files": [
