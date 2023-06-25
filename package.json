@@ -1,19 +1,25 @@
 {
   "name": "react-native-android-wake-screen",
   "title": "React Native Android Wake Screen",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Turn the Screen Display On",
   "main": "index.js",
   "files": [
     "README.md",
     "android",
     "index.js"
-   ],
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-native-android-wake-screen",
+    "react",
+    "native",
+    "android",
+    "wake",
+    "screen"
   ],
   "author": {
     "name": "Pranav",
